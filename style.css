@@ -1,0 +1,16 @@
+@import "tailwindcss";
+.c6c{
+    background-color:#c6c;
+}
+input[type="button"]:hover{
+    background-color:#c653c6;
+}
+input[type="text"]:active{
+    background-color:#c653c6;
+}
+input[type="text"]:hover{
+    background-color:#c653c6;
+}
+body{
+    background-color:#c6c;
+}
