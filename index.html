@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Jedlik - HTML-Tailwindcss-Vite-Starter</title>
+  </head>
+
+  <body class="flex min-h-screen items-center justify-center bg-gray-100">
+    <div class="w-md rounded-lg bg-white p-6 shadow-lg">
+      <h1 class="mb-4 text-center text-2xl font-bold">Téglalap kerülete és területe.</h1>
+      <form class="space-y-4">
+        <div>
+          <label for="sideA">"a" oldal hossza:</label>
+          <input class="required rounded-sm border border-gray-300 pl-2 hover:bg-amber-50" id="sideA" type="text" />
+          <select id="sideAUnit">
+            <option value="mm">mm</option>
+            <option selected value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+            <option value="in">in</option>
+          </select>
+        </div>
+        <div>
+          <label for="sideB">"b" oldal hossza:</label>
+          <input class="required rounded-sm border border-gray-300 pl-2 hover:bg-amber-50" id="sideB" type="text" />
+          <select id="sideBUnit">
+            <option value="mm">mm</option>
+            <option selected value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+            <option value="in">in</option>
+          </select>
+        </div>
+        <div class="flex justify-center">
+          <input
+            class="c6c w-full rounded-md py-2 font-bold text-white shadow-lg"
+            id="calc-button"
+            type="button"
+            value="Számolás"
+          />
+        </div>
+        <div>
+
+          <p class="text-gray-700">Kerület: <span class="font-bold" id="K"></span> 
+            <select id="kUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Terület: <span class="font-bold" id="T"></span> 
+            <select id="TUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Átlók hossza: <span class="font-bold" id="Á"></span> 
+            <select id="ÁUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Köré írt kör sugara: <span class="font-bold" id="R"></span> 
+            <select id="RUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Köré írt kör kerülete: <span class="font-bold" id="KK"></span> 
+            <select id="KKUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Köré írt kör területe: <span class="font-bold" id="KT"></span> 
+            <select id="KTUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Belé írt kör sugara: <span class="font-bold" id="IR"></span> 
+            <select id="IRUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Belé írt kör kerülete: <span class="font-bold" id="IKK"></span> 
+            <select id="IKKUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+
+          <p class="text-gray-700">Belé írt kör területe: <span class="font-bold" id="IKT"></span> 
+            <select id="IKTUnit">
+              <option value="mm">mm</option>
+              <option selected value="cm">cm</option>
+              <option value="dm">dm</option>
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="in">in</option>
+            </select>
+          </p>
+          
+        </div>
+      </form>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
